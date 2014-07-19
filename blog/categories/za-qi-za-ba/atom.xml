@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 杂七杂八 | @interface SZBlog : NSBlog]]></title>
+  <link href="http://zongxuan.us/blog/categories/za-qi-za-ba/atom.xml" rel="self"/>
+  <link href="http://zongxuan.us/"/>
+  <updated>2014-07-19T11:21:16+08:00</updated>
+  <id>http://zongxuan.us/</id>
+  <author>
+    <name><![CDATA[szx]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[那些年，我们一起玩过的手机游戏]]></title>
+    <link href="http://zongxuan.us/blog/2012/09/15/the-phone-games-that-we-once-played/"/>
+    <updated>2012-09-15T23:18:00+08:00</updated>
+    <id>http://zongxuan.us/blog/2012/09/15/the-phone-games-that-we-once-played</id>
+    <content type="html"><![CDATA[<h3>Part 1</h3>
+
+<p>相对而言，我接触手机是比较晚的，06年上大学时候才拥有了自己的第一部手机——Sony Ericsson K750c。</p>
+
+<p>这部机器在当时带给我的震撼和乐趣至今仍然难以有机器企及：</p>
+
+<ol>
+<li><p>相当强大的Java性能。这让我玩到了当时几乎所有的流行手机游戏，直到08年才慢慢显出老态。</p></li>
+<li><p>由于固件已经得到了相当充分的研究，因此这部机器打过补丁后相当逆天。试着想一下15秒曝光时间的照片吧。。。即使是现在的iPhone、Android，这也是一个不可能完成的任务。</p></li>
+<li><p>能和W800固件互刷，于是2k5的ds机瞬间变成了当时3k5+的高帅富机器。其实我这部K750的固件从买到手到最后在大桥南路被偷基本上用的都是W800的固件。。。</p></li>
+</ol>
+
+
+<p>总之，这部机器在还不许带电脑的大一给我带来了无穷的乐趣。</p>
+
+<p>现在每天会关注下相关的网站、论坛看看有没有新出的App，新的玩法。</p>
+
+<p>当时却是在it168的sebbs找有没有新出的好玩的补丁，然后刷，然后可能bug，然后就重刷，然后再重刷各种补丁，乐此不疲。</p>
+
+<p>最后，这部机器在2008年3月1日于大桥南路被偷。直到现在才发现从那时起就告别了SE，不知以后有没有机会重逢。</p>
+
+<h3>Part 2</h3>
+
+<p>第一部手机被偷之后心情是相当郁闷的，用现在的话讲就是“好累，感觉不会再爱了”。</p>
+
+<p>于是第二部机器果断地花了1K5买了07年的中低端Symbian——一代神机6120c，并且心里暗暗有个心愿以后再也不买贵的手机了，直到最后这个心愿被iPhone打破。</p>
+
+<p>相对于同期的中高端机器，我实在是难以理解诺基亚的布局。</p>
+
+<p>当时N73还是处于中高端机器的价位，而N95则稳稳地属于高端机。</p>
+
+<p>但是N73用了220MHz的处理器，整个机器的表现可以用龟速形容。</p>
+
+<p>N95处理器比较好，带3D加速和AAC硬件解码，但是频率也就300出头。（似乎不同的固件会有不同的频率？没用过，不清楚）</p>
+
+<p>但是6120却用了369MHz的处理器。。。（不带3D加速和AAC硬件解码）</p>
+
+<p>最后导致的结果是6120在大部分的应用中反应速度完爆N73。。。</p>
+
+<p><strong>诺基亚啊诺基亚，你今天的惨状其实早就有预兆了。。。产品线的混乱！</strong></p>
+
+<p>这机器也是让我玩到了不少东西。</p>
+
+<p>1、破解系统的权限，用RomPatcher打各种补丁。</p>
+
+<p>2、到后期甚至能够通过补丁和系统文件实现一些S60V3 FP2的功能，比如主题特效。</p>
+
+<p>3、各种S60上的软件、游戏（包括后来的N-GAGE）。</p>
+
+<p><strong>其实从某种程度上看来，诺基亚比苹果还封闭。</strong></p>
+
+<p>一部机器如果出厂是S60V3 FP1，那你是永远也别指望能升级成S60V3 FP2乃至FP3的，而且，用现在的视角看起来，还是锁bootloader的！</p>
+
+<p>相比之下，水果至少有3个官方升级。Android更不用说了，官方没有民间也能有。</p>
+
+<p>在被我折腾了两年、返厂一次、换外壳一次之后，6120光荣退休，目前作为我家人的备用机使用。诺基亚耐操的品质可见一斑。而且比起N95这类机器，诺基亚是越低端的机器越耐操，N95还会碎屏。。。。</p>
+
+<p><strong>又是两个诺基亚衰败的预兆啊！</strong></p>
+
+<h3>Part 3</h3>
+
+<p>在6120退休之后陆续还用过HTC Dream，Magic，三星Galaxy S Vibrant，Moto Milestone XT720，三星Nexus S，HTC Desire S，折腾着刷固件，装各种桌面Widget，各种软件。</p>
+
+<p>可惜年岁增长，刷机器的热情以指数级别降低。一直延续到现在买机器首选是Google亲儿子，直接刷个官方固件，root下了事。。。</p>
+
+<p>非官方Rom一天一个新版，伤不起。所以至多也就是刷个Miui，CM之类的。。。</p>
+
+<p>Android曾经给过我惊艳，从G1的Android 1.0，到后来带中文输入的1.5，再后来G2的Sense桌面，Galaxy S上手的极度流畅，惊艳的屏幕以及XT720毛都不能玩的蛋疼（锁BL）。到现在Galaxy S3的不算很成功的逆袭。。。</p>
+
+<p>然后我疲软了，已经只想找部安安顿顿的机器了。</p>
+
+<p><strong>Moto，znm的这么多年过去了你丫还是没有醒悟，活该被收购。。。</strong></p>
+
+<h3>Part 4</h3>
+
+<p>其实我接触iPhone的时间也比较短，拥有的第一部iPhone是3GS。</p>
+
+<p>当时最大的感想就是，一样的配置，为啥这Android这货就能卡比成这个样子呢。。。</p>
+
+<p>比如，在128MB内存的touch 2上，是能流畅地玩愤怒的小鸟的。。。</p>
+
+<p>而且，iPhone上的App着实把我的审美观好好地扭转了，造成的影响一直延续至今。</p>
+
+<p><strike>不然我现在写的东西就是最炫Android风了。。。</strike></p>
+
+<p>现在在用iPhone 4S，我觉得我会用到它报废。如果没有报废就换，那么肯定是换了新款iPhone。</p>
+
+<h3>Part 5</h3>
+
+<p>好吧，上面两个Part比较短的原因是因为我打字打累了。</p>
+
+<h3>Part 6</h3>
+
+<p>其实写到这里，已经是严重偏题了，手机游戏=>玩机历程。</p>
+
+<p>我想怀念的只有一部机器——K750，因为在它上面我玩到了我至今念念不忘的几款游戏：</p>
+
+<ol>
+<li>Deep</li>
+<li>V-Rally</li>
+<li>4×4 Extreme Rally</li>
+</ol>
+
+
+<p>如果当时有App Store，我肯定会把这三个游戏的正版都买一遍。</p>
+
+<p>为什么会怀念呢？因为我最近在玩Galaxy On Fire 2 HD，Fishlabs家的。</p>
+
+<p>每次看到熟悉的Abyss引擎标志就会不由自主地想起K750。</p>
+
+<p>其实这个游戏我早先在原价时候就买了。。。最近在冰点，于是又拿出来重玩了一遍，再额外花了3刀买了扩展包。</p>
+
+<p>小做修改，把金钱改到了99,999,999，玩得相当爽。</p>
+
+<p>等这段时间忙过了，一定要用最高难度不作任何修改玩一遍。</p>
+
+<p>嗯。</p>
+
+<p>懒得继续打字了，就这样吧。</p>
+
+<h3>尾声</h3>
+
+<p>最后还是祝我和妹子，本级的所有同学都能找到满意的工作。</p>
+
+<p>目前面试被拒得太惨了，都感觉不会再爱了，不说也罢。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[把博客迁移到了Octopress]]></title>
+    <link href="http://zongxuan.us/blog/2012/07/30/migrated-my-blog-to-octopress/"/>
+    <updated>2012-07-30T13:54:00+08:00</updated>
+    <id>http://zongxuan.us/blog/2012/07/30/migrated-my-blog-to-octopress</id>
+    <content type="html"><![CDATA[<p>Wordpress是个好东西，可是用着用着就会觉得这玩意太重量级了。</p>
+
+<p>其实很多时候并不想去关注怎么去优化，怎么去配置。只想有个可以简简单单写写东西的地方就行了。</p>
+
+<p>Octopress在本地生成静态页面，然后再部署到服务器，挺好。</p>
+
+<p>在本地用Mou写markdown的感觉比Wordpress那个蛋疼的在线编辑器实在是好多了。</p>
+
+<p>老博客里的文章陆续也会迁移进来，以后的新文章就写在Octopress上了。</p>
+]]></content>
+  </entry>
+  
+</feed>

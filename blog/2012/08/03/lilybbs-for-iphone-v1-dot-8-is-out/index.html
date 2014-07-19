@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>百合iPhone客户端1.8版发布 - @interface SZBlog : NSBlog</title>
+  <meta name="author" content="szx">
+
+  
+  <meta name="description" content="前言 最近学期末，很是忙碌，因此也没有空来更新程序。 这两天稍微空了一点，于是继续爬了会儿代码，这不，算是捣鼓出了一个新的版本。 changelog和下载地址请见 http://zongxuan.us/lily 这个版本最主要的改进是加入了推送的支持。 关于推送 目前暂时只推送十大。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zongxuan.us/blog/2012/08/03/lilybbs-for-iphone-v1-dot-8-is-out">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="@interface SZBlog : NSBlog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33867112-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@interface SZBlog : NSBlog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zongxuan.us" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">百合iPhone客户端1.8版发布</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-03T20:30:00+08:00" pubdate data-updated="true">Aug 3<sup>rd</sup>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>前言</h2>
+
+<p>最近学期末，很是忙碌，因此也没有空来更新程序。</p>
+
+<p>这两天稍微空了一点，于是继续爬了会儿代码，这不，算是捣鼓出了一个新的版本。</p>
+
+<p>changelog和下载地址请见 <a href="http://zongxuan.us/lily">http://zongxuan.us/lily</a></p>
+
+<p>这个版本最主要的改进是加入了推送的支持。</p>
+
+<h2>关于推送</h2>
+
+<p>目前暂时只推送十大。肯定有很多朋友要说为什么不能做个站内信神马的推送，对不起，这个我实在也是无能为力，原因请看百合站规：</p>
+
+<blockquote><p>对于有严重危害本站的行为（如使用上站机，使用灌水机、自动发文机等一切非手工发文工具或快捷键）的账号，本站有权直接删除。技术站务调试系统除外，但个人不得从中获利。</p></blockquote>
+
+<p>推送是什么原理呢？</p>
+
+<p>很简单，如果加入了站内信的推送，那么就相当于是我的服务器(这个也是个大问题)一直帮你把百合id挂着，同时每隔一段时间检测有没有新的站内信，如果有新的站内信，那么就通知水果的服务器，给你发个推送。</p>
+
+<p>因此，这个服务器是个典型的挂站机。</p>
+
+<p>而且，百合的登录(不要写成登陆哦 :))是无法保持的，如果你登录了一个新的session，那么老的session就会被杀掉。太棒了，如果你由于某些原因导致在其他客户端(Web、Term、App)不停地登录，那你一天100次的登录次数很快就没有了哦。</p>
+
+<p>与此同时还有一个问题，我暂时还没有如此强大的服务器。</p>
+
+<p>可以计算一下，如果当前有1k用户，每个用户一小时刷新一下站内信，那么也就是平均每(3600/1000=3.6)秒我的服务器就要刷一下百合的页面，而且是持续访问，<del>技站们会来干掉我的。。。</del></p>
+
+<p><strong>总之，一句话，在我可见的将来，是不会也不可能有站内信推送的。</strong></p>
+
+<h2>后续发展</h2>
+
+<p>由于1.X的代码已经沿用了相当一段时间，有时候为了第一时间加入最新的功能，代码就写得不是很漂亮，而且很多最新的技术也没有用到，甚至于影响到了后续功能的开发。因此在最近一段时间我会开始进行2.0版的项目。</p>
+
+<p>2.0版的开发将会效仿Chrome，分三个版本发布：</p>
+
+<ol>
+<li>功能最新bug最多的rabbit版(哈哈，jump into the rabbit hole :))</li>
+<li>比rabbit版更稳定，但是新功能略少的dev版。</li>
+<li>经过了dev版后的正式版，这个版本提交App Store。</li>
+</ol>
+
+
+<p>同时，在1.X版时我对于App Store上的版本号理解也有些偏差，因此2.0以后版本号会重新定义。大致是这个样子的：</p>
+
+<table>
+   <tr align="center">
+      <td>&nbsp;&nbsp;大版本&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;小版本&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;Build&nbsp;&nbsp;</td>
+   </tr>
+   <tr align="center">
+      <td>2&nbsp</td>
+      <td>0</td>
+      <td>(10)</td>
+   </tr>
+</table>
+
+
+
+
+<br />
+
+
+<p><strong>Build号说明当前版本的特性</strong></p>
+
+<ol>
+<li>末位为3n的说明是正式版，比如0, 3</li>
+<li>末位为3n+1的是dev版，比如1, 4</li>
+<li>末位为3n+2的是rabbit版，2, 5</li>
+</ol>
+
+
+<p>这样子应该会更清晰点 >o&lt;，不知各位意下如何。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">szx</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-03T20:30:00+08:00" pubdate data-updated="true">Aug 3<sup>rd</sup>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/07/30/migrated-my-blog-to-octopress/" title="Previous Post: 把博客迁移到了Octopress">&laquo; 把博客迁移到了Octopress</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/09/15/the-phone-games-that-we-once-played/" title="Next Post: 那些年，我们一起玩过的手机游戏">那些年，我们一起玩过的手机游戏 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/19/how-to-make-theme-for-lilybbs-ios-client/">小百合iOS客户端主题制作教程</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/16/autocad-2014-mac-makes-system-laggy/">安装Autocad 2014 for Mac 后系统变卡的解决方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/14/how-to-upgrade-to-ios7-beta/">如何在你的 iPhone 上安装 iOS7</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/09/how-to-override-hostname-provided-by-netbios-in-os-x/">如何在 OS X 中防止终端用户名被 NetBIOS 名称覆盖</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/13/refined-njuthesis-latex-template/">为 OS X + Sublime Text 优化后的 NJUThesis 模板</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/fireblue">@fireblue</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'fireblue',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - szx -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'fireblue';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://zongxuan.us/blog/2012/08/03/lilybbs-for-iphone-v1-dot-8-is-out/';
+        var disqus_url = 'http://zongxuan.us/blog/2012/08/03/lilybbs-for-iphone-v1-dot-8-is-out/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

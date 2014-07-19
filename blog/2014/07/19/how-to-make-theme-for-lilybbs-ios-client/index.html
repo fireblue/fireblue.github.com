@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>小百合iOS客户端主题制作教程 - @interface SZBlog : NSBlog</title>
+  <meta name="author" content="szx">
+
+  
+  <meta name="description" content="昨晚更新的 3.0.1 版本开始支持第三方主题。 之前的 3.0.0 版本也能够识别第三方主题，但有部分选项可能支持不佳。 示例主题包： 主题制作仿照示例主题包即可，主要内容在于图片文件的准备和包内 info.plist 的配置。 1. 图片资源准备 图片资源文件请使用 png 文件，jpg &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zongxuan.us/blog/2014/07/19/how-to-make-theme-for-lilybbs-ios-client">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="@interface SZBlog : NSBlog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33867112-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@interface SZBlog : NSBlog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zongxuan.us" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">小百合iOS客户端主题制作教程</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-19T10:03:21+08:00" pubdate data-updated="true">Jul 19<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>昨晚更新的 3.0.1 版本开始支持第三方主题。</p>
+
+<p>之前的 3.0.0 版本也能够识别第三方主题，但有部分选项可能支持不佳。</p>
+
+<p>示例主题包：</p>
+
+<p>主题制作仿照示例主题包即可，主要内容在于图片文件的准备和包内 info.plist 的配置。</p>
+
+<h3>1. 图片资源准备</h3>
+
+<p>图片资源文件请使用 png 文件，jpg 文件在 iOS 上性能不佳，而且不能实现透明，如果你使用 jpg，所有图标都可能会变成大方块哦~</p>
+
+<p>图片大小请参照实例主题包内的图片大小，稍微相差一点也是没问题的，但最好是偶数像素大小。</p>
+
+<p>图片文件名的格式为 &lt;文件名>&lt;@2x>，同示例主题包。</p>
+
+<p>图片文件 <em>可以</em> 用 ImageOptim 等软件适当优化，有利于提高那么些许的性能。不过不优化也是没什么问题的。</p>
+
+<p>图片基本上就这样了。</p>
+
+<h3>2. info.plist 文件配置</h3>
+
+<p>info.plist 是主题的配置文件，是一个标准的 XML 文件，Windows 平台上可使用 UltraEdit 等软件打开，请注意打开时会提示是否转换到 Windows 标准的换行符，最好不要转换。</p>
+
+<p>在 Mac 上可以直接用 Xcode 改。</p>
+
+<p>打开来可以看到文件基本上是这样的：</p>
+
+<p><img src="../images/post/2014-07-19-how-to-make-theme-for-lilybbs-ios-client/1.png" alt="" /></p>
+
+<p>配置好每一项就 OK 了。</p>
+
+<p>info.plist 文件内的字段共有三种类型。</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>字段类型         </th>
+<th>含义           </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>图片            </td>
+<td>请使用图片文件 @2x 之前的部分</td>
+</tr>
+<tr>
+<td></td>
+<td>颜色            </td>
+<td>使用 Web 标准的 16进制颜色</td>
+</tr>
+<tr>
+<td></td>
+<td>布尔值          </td>
+<td>配置为 true 或 false</td>
+</tr>
+<tr>
+<td></td>
+<td>字符串          </td>
+<td>字符串本体</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>字段名                                   </th>
+<th>类型         </th>
+<th>含义                                    </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td> THEME_IDENTIFIER                          </td>
+<td>字符串</td>
+<td>主题的标示符，需要保证全世界唯一。没有自己域名的童鞋建议用net.lilybbs.&lt;自己的id>.&lt;主题名字>这样的格式</td>
+</tr>
+<tr>
+<td></td>
+<td> THEME_DISPLAY_NAME                       </td>
+<td>字符串</td>
+<td>主题的显示名字，这个会显示在客户端的“主题”功能内</td>
+</tr>
+<tr>
+<td></td>
+<td> THEME_AUTHOR_NAME                        </td>
+<td>字符串</td>
+<td>作者名字</td>
+</tr>
+<tr>
+<td></td>
+<td> THEME_AUTHOR_DATE                        </td>
+<td>字符串</td>
+<td>主题制作日期</td>
+</tr>
+<tr>
+<td></td>
+<td> THEME_VERSION                             </td>
+<td>字符串</td>
+<td>主题版本</td>
+</tr>
+<tr>
+<td></td>
+<td> THEME_COMPATABILITY                       </td>
+<td>字符串</td>
+<td>主题兼容性字段（暂时不用）</td>
+</tr>
+<tr>
+<td></td>
+<td> NAVIGATION_BAR_TINT_COLOR               </td>
+<td>颜色  </td>
+<td>导航栏背景颜色</td>
+</tr>
+<tr>
+<td></td>
+<td> NAVIGATION_BAR_TEXT_COLOR               </td>
+<td>颜色  </td>
+<td>导航栏字体颜色</td>
+</tr>
+<tr>
+<td></td>
+<td> NAVIGATION_BAR_BACKGROUND_COLOR         </td>
+<td>颜色  </td>
+<td>主题栏背景颜色（一般和上面一个背景颜色设置成一样）</td>
+</tr>
+<tr>
+<td></td>
+<td> NAVIGATION_BAR_BACKGROUND_IMAGE         </td>
+<td>图片  </td>
+<td>导航栏背景图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_SELECTED_TINT_COLOR            </td>
+<td>颜色  </td>
+<td>底栏选中时图标的颜色</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_TINT_COLOR                      </td>
+<td>颜色  </td>
+<td>同上</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_SELECTED_TEXT_COLOR            </td>
+<td>颜色  </td>
+<td>底栏文字选中时的颜色</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_UNSELECTED_TEXT_COLOR          </td>
+<td>颜色  </td>
+<td>底栏文字未选中时的颜色</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_BACKGROUND_IMAGE                </td>
+<td>图片  </td>
+<td>底栏背景图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_BACKGROUND_COLOR                </td>
+<td>颜色  </td>
+<td>底栏背景颜色</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_ICONS_TOPTEN_SELECTED_IMAGE   </td>
+<td>图片  </td>
+<td>底栏“全站十大”选中时的图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_ICONS_TOPTEN_IMAGE             </td>
+<td>图片  </td>
+<td>底栏“全站十大”未选中时的图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_ICONS_FAVORITES_SELECTED_IMAGE</td>
+<td>图片  </td>
+<td>底栏“我的收藏”选中时的图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_ICONS_FAVORITES_IMAGE          </td>
+<td>图片  </td>
+<td>底栏“我的收藏”未选中时的图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_ICONS_BROWSE_SELECTED_IMAGE   </td>
+<td>图片  </td>
+<td>底栏“浏览功能”选中时的图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_ICONS_BROWSE_IMAGE             </td>
+<td>图片  </td>
+<td>底栏“浏览功能”未选中时的图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_ICONS_PERSONAL_SELECTED_IMAGE </td>
+<td>图片  </td>
+<td>底栏“个人中心”选中时的图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_ICONS_PERSONAL_IMAGE           </td>
+<td>图片  </td>
+<td>底栏“个人中心”未选中时的图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_ICONS_SETTINGS_SELECTED_IMAGE </td>
+<td>图片  </td>
+<td>底栏“设置”选中时的图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_ICONS_SETTINGS_IMAGE           </td>
+<td>图片  </td>
+<td>底栏“设置”未选中时的图片</td>
+</tr>
+<tr>
+<td></td>
+<td> TAB_BAR_ICONS_DISPLAY_ORIGINAL         </td>
+<td>布尔型</td>
+<td>是否按原样显示底栏上的图片（若为 false 则 iOS 默认会自动添加灰色的遮罩到图片上）</td>
+</tr>
+<tr>
+<td></td>
+<td> TABLE_CELL_CACHE_STATUS_COLOR          </td>
+<td>颜色  </td>
+<td>帖子的未读提示颜色</td>
+</tr>
+<tr>
+<td></td>
+<td> NOT_IMPL_TABLE_CELL_TITLE_COLOR       </td>
+<td>颜色  </td>
+<td>尚未实现</td>
+</tr>
+<tr>
+<td></td>
+<td> NOT_IMPL_TABLE_CELL_AUTHOR_COLOR      </td>
+<td>颜色  </td>
+<td>尚未实现</td>
+</tr>
+<tr>
+<td></td>
+<td> NOT_IMPL_TABLE_CELL_BOARD_COLOR       </td>
+<td>颜色  </td>
+<td>尚未实现</td>
+</tr>
+<tr>
+<td></td>
+<td> NOT_IMPL_TABLE_CELL_VIEWED_COLOR      </td>
+<td>颜色  </td>
+<td>尚未实现</td>
+</tr>
+<tr>
+<td></td>
+<td> NOT_IMPL_TABLE_BACKGROUND_COLOR        </td>
+<td>颜色  </td>
+<td>尚未实现</td>
+</tr>
+<tr>
+<td></td>
+<td> NOT_IMPL_TABLE_BACKGROUND_IMAGE        </td>
+<td>图片  </td>
+<td>尚未实现</td>
+</tr>
+<tr>
+<td></td>
+<td> READER_HEADER_COLOR                      </td>
+<td>颜色  </td>
+<td>阅读时头部版面背景色</td>
+</tr>
+<tr>
+<td></td>
+<td> READER_HEADER_TEXT_COLOR                </td>
+<td>颜色  </td>
+<td>阅读时头部版面字体颜色</td>
+</tr>
+<tr>
+<td></td>
+<td> STATUS_BAR_STYLE                         </td>
+<td>字符串</td>
+<td>此处需配置为“STATUS_BAR_STYLE_LIGHT_CONTENT” 或 STATUS_BAR_STYLE_DARK_CONTENT，即状态栏文字为白色或黑色</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>3. 调试</h3>
+
+<p>使用文件传输工具（OS X 平台可使用 iExplorer，Windows 平台可使用 iFunbox）将主题文件夹传输至小百合 App 的 &ldquo;Documents\Skins&rdquo; 目录，打开 App 内的“个人中心\主题”即可看到新的主题。</p>
+
+<p><img src="../images/post/2014-07-19-how-to-make-theme-for-lilybbs-ios-client/2.png" alt="" /></p>
+
+<p>目前，主题内配置的颜色可实时生效，底栏的图片需要重启 App 生效。</p>
+
+<p>就是这么简单~</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">szx</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-19T10:03:21+08:00" pubdate data-updated="true">Jul 19<sup>th</sup>, 2014</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/12/16/autocad-2014-mac-makes-system-laggy/" title="Previous Post: 安装Autocad 2014 for Mac 后系统变卡的解决方法">&laquo; 安装Autocad 2014 for Mac 后系统变卡的解决方法</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/19/how-to-make-theme-for-lilybbs-ios-client/">小百合iOS客户端主题制作教程</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/16/autocad-2014-mac-makes-system-laggy/">安装Autocad 2014 for Mac 后系统变卡的解决方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/14/how-to-upgrade-to-ios7-beta/">如何在你的 iPhone 上安装 iOS7</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/09/how-to-override-hostname-provided-by-netbios-in-os-x/">如何在 OS X 中防止终端用户名被 NetBIOS 名称覆盖</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/13/refined-njuthesis-latex-template/">为 OS X + Sublime Text 优化后的 NJUThesis 模板</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/fireblue">@fireblue</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'fireblue',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - szx -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'fireblue';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://zongxuan.us/blog/2014/07/19/how-to-make-theme-for-lilybbs-ios-client/';
+        var disqus_url = 'http://zongxuan.us/blog/2014/07/19/how-to-make-theme-for-lilybbs-ios-client/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

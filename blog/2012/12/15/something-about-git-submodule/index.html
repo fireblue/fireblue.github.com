@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>关于Git Submodule的一些操作 - @interface SZBlog : NSBlog</title>
+  <meta name="author" content="szx">
+
+  
+  <meta name="description" content="submodule是git的一个很方便的功能，对于像笔者这样的更新强迫症患者绝对是个福音。将Github上的项目作为submodule添加到自己的项目中后，能够很方便地进行更新。 本文是我在git submodule使用过程中积累下的几个简单用法，放在这儿留档的同时分享给大伙儿看一下~ &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zongxuan.us/blog/2012/12/15/something-about-git-submodule">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="@interface SZBlog : NSBlog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33867112-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@interface SZBlog : NSBlog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zongxuan.us" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">关于Git Submodule的一些操作</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-15T23:18:00+08:00" pubdate data-updated="true">Dec 15<sup>th</sup>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>submodule是git的一个很方便的功能，对于像笔者这样的更新强迫症患者绝对是个福音。将Github上的项目作为submodule添加到自己的项目中后，能够很方便地进行更新。</p>
+
+<p>本文是我在git submodule使用过程中积累下的几个简单用法，放在这儿留档的同时分享给大伙儿看一下~</p>
+
+<ol>
+<li>添加submodule</li>
+</ol>
+
+
+<p>很简单，一句命令即可</p>
+
+<blockquote><p>git submodule add git://yourhost/repo.git Externals/repo</p></blockquote>
+
+<ol>
+<li>删除submodule</li>
+</ol>
+
+
+<p>相对于添加略微烦一点，按照如下步骤即可：</p>
+
+<p>先在git中删掉这个submodule</p>
+
+<blockquote><p>git rm &mdash;cached Externals/repo</p>
+
+<p>rm -rf Externals/repo</p></blockquote>
+
+<p>接着修改.gitmodules，删掉当中对应于这个submodule的部分</p>
+
+<blockquote><p>vim .gitmodules</p></blockquote>
+
+<p>接着修改.git/config</p>
+
+<blockquote><p>vim .git/config</p></blockquote>
+
+<p>修改完成之后理论上submodule就从当前的工作目录消失了，于是commit一下</p>
+
+<blockquote><p>git add .gitmodules</p>
+
+<p>git commit -m &ldquo;Farewell my submodule&rdquo;</p></blockquote>
+
+<p>还不放心就同步一下</p>
+
+<blockquote><p>git submodule sync</p></blockquote>
+
+<ol>
+<li>更新submodule</li>
+</ol>
+
+
+<p>很简单，先cd到需要更新的submodule</p>
+
+<blockquote><p>cd Externals/repo</p></blockquote>
+
+<p>然后pull一下</p>
+
+<blockquote><p>git pull origin master</p></blockquote>
+
+<p>完事</p>
+
+<p>当然，一般而言一个项目是绝对不可能只用到一个submodule的，下面这个命令可以事半功倍：</p>
+
+<blockquote><p>git submodule foreach git pull origin master</p></blockquote>
+
+<p>当然还有很多其它的办法，欢迎分享~</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">szx</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-15T23:18:00+08:00" pubdate data-updated="true">Dec 15<sup>th</sup>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/09/15/the-phone-games-that-we-once-played/" title="Previous Post: 那些年，我们一起玩过的手机游戏">&laquo; 那些年，我们一起玩过的手机游戏</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/12/19/one-regex-expression-for-urls/" title="Next Post: 一个可以匹配url的正则表达式">一个可以匹配url的正则表达式 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/19/how-to-make-theme-for-lilybbs-ios-client/">小百合iOS客户端主题制作教程</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/16/autocad-2014-mac-makes-system-laggy/">安装Autocad 2014 for Mac 后系统变卡的解决方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/14/how-to-upgrade-to-ios7-beta/">如何在你的 iPhone 上安装 iOS7</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/09/how-to-override-hostname-provided-by-netbios-in-os-x/">如何在 OS X 中防止终端用户名被 NetBIOS 名称覆盖</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/13/refined-njuthesis-latex-template/">为 OS X + Sublime Text 优化后的 NJUThesis 模板</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/fireblue">@fireblue</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'fireblue',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - szx -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'fireblue';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://zongxuan.us/blog/2012/12/15/something-about-git-submodule/';
+        var disqus_url = 'http://zongxuan.us/blog/2012/12/15/something-about-git-submodule/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

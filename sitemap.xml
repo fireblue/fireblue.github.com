@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2014/07/19/how-to-make-theme-for-lilybbs-ios-client/</loc>
+    <lastmod>2014-07-19T10:03:21+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2013/12/16/autocad-2014-mac-makes-system-laggy/</loc>
+    <lastmod>2013-12-16T16:31:51+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2013/06/14/how-to-upgrade-to-ios7-beta/</loc>
+    <lastmod>2013-06-14T18:19:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2013/05/09/how-to-override-hostname-provided-by-netbios-in-os-x/</loc>
+    <lastmod>2013-05-09T12:59:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2013/04/13/refined-njuthesis-latex-template/</loc>
+    <lastmod>2013-04-13T22:31:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2013/03/20/creating-a-snapshot-of-uiwebview/</loc>
+    <lastmod>2013-03-20T21:50:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2013/03/17/revert-login-screen-to-chinese-after-update/</loc>
+    <lastmod>2013-03-17T23:40:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2013/01/05/my-fork-of-iconsole/</loc>
+    <lastmod>2013-01-05T15:42:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2012/12/19/one-regex-expression-for-urls/</loc>
+    <lastmod>2012-12-19T15:27:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2012/12/15/something-about-git-submodule/</loc>
+    <lastmod>2012-12-15T23:18:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2012/09/15/the-phone-games-that-we-once-played/</loc>
+    <lastmod>2012-09-15T23:18:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2012/08/03/lilybbs-for-iphone-v1-dot-8-is-out/</loc>
+    <lastmod>2012-08-03T20:30:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/blog/2012/07/30/migrated-my-blog-to-octopress/</loc>
+    <lastmod>2012-07-30T13:54:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://zongxuan.us/blog/archives/</loc>
+    <lastmod>2014-07-19T11:21:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/</loc>
+    <lastmod>2014-07-19T11:21:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://zongxuan.us/lily/</loc>
+    <lastmod>2014-07-19T11:21:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+</urlset>

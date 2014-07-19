@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>如何在你的 iPhone 上安装 iOS7 - @interface SZBlog : NSBlog</title>
+  <meta name="author" content="szx">
+
+  
+  <meta name="description" content="首先，直接从 iOS6 升级是无需重新激活的，测试版 iOS 仅会在激活时验证开发者身份。而从 iOS6 “升级”到 iOS7 是无需重新激活的，也就意味着并不需要开发者身份即可使用。 但非开发者使用 iOS7 是违反苹果的条款的，这点苹果说得很清楚。 This is an Apple &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zongxuan.us/blog/2013/06/14/how-to-upgrade-to-ios7-beta">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="@interface SZBlog : NSBlog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33867112-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@interface SZBlog : NSBlog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zongxuan.us" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">如何在你的 iPhone 上安装 iOS7</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-14T18:19:00+08:00" pubdate data-updated="true">Jun 14<sup>th</sup>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>首先，直接从 iOS6 升级是无需重新激活的，测试版 iOS 仅会在激活时验证开发者身份。而从 iOS6 “升级”到 iOS7 是无需重新激活的，也就意味着并不需要开发者身份即可使用。</p>
+
+<p>但非开发者使用 iOS7 是违反苹果的条款的，这点苹果说得很清楚。</p>
+
+<blockquote><p>This is an Apple Confidential pre-release seed.  Your use is subject to and licensed only under the terms and conditions of the iOS Developer Program License Agreement (&ldquo;iOS PLA&rdquo;), including any applicable consent to collect diagnostic data set forth therein. If you have not agreed to the iOS PLA, you are not permitted to use this software.”</p></blockquote>
+
+<p>这也意味着去淘宝买 UDID 开发者认证本身是违反条款的，苹果可以随时中止相关开发者账号，所以不用浪费钱了。</p>
+
+<p>综上所述，以下内容是给开发者计划中的开发者们准备的。</p>
+
+<p>首先要纠正一个概念，目前刷 iOS7 还不能叫“升级”，因为升级往往代表更好的表现，而iOS7目前还没有达到这个程度，bug比较多，比较卡顿，电池表现也非常烂。因此只建议开发机安装，不建议日常使用。</p>
+
+<p>如果你觉得这些后果 OK，想体验一下的话，只需如下步骤：</p>
+
+<ol>
+<li><p>确认机器处于非越狱的 iOS6 状态，如果越狱了，先下个 iOS6 的最新固件恢复一下（即使没越狱也建议下一份，因为大多数人很快就会刷回来的）</p></li>
+<li><p>用 iTunes 备份手机，并把 iTunes 的备份文件夹本身备份一遍，因为如果刷了 iOS7，备份就会被更新而无法用于 iOS6 了，如果没有老的备份的备份，就等着哭吧。。。</p></li>
+</ol>
+
+
+<p>Windows 的 iTunes 备份文件夹位于</p>
+
+<pre><code>C:\Users\(用户名)\AppData\Roaming\Apple Computer\MobileSync\Backup\
+</code></pre>
+
+<p>OS X 的 iTunes 备份文件夹位于</p>
+
+<pre><code>~/Library/Application Support/MobileSync/Backup
+</code></pre>
+
+<p>如果只想备份这个 iPhone 的，那么备份该文件夹下这个 iPhone 的 UDID 对应的那个文件夹即可，比如我的是：</p>
+
+<pre><code>~/Library/Application Support/MobileSync/Backup/591*************************653
+</code></pre>
+
+<ol>
+<li>下载对应机型的 iOS7 固件，然后在iTunes里面进入iPhone的页面</li>
+</ol>
+
+
+<p>Windows 的话按住 shift 然后点更新，</p>
+
+<p>OS X 是 option 点更新</p>
+
+<p>选择 iOS7 的 ipsw，然后开刷，然后就是 iOS7 了。</p>
+
+<br />
+
+
+<p>＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝=＝＝＝我是邪恶的分割线😈＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝=</p>
+
+<br />
+
+
+<p>ooxx 体验完之后，估计起码半数的人会想刷回来。刷回来的过程也是很简单的。</p>
+
+<ol>
+<li><p>先确认你备份好了原先 iOS6 的备份，如果没有，请先准备好哭吧。</p></li>
+<li><p>选择你刚才已经下好的 iOS6 固件，按照刚才的 shift/option + 更新大法，选择 iOS6 的固件。</p></li>
+<li><p>如果一切正常就会顺利回到 iOS6 了，关 iTunes。</p></li>
+<li><p>去 iTunes 备份文件夹把备份删了，把之前备份好的 iOS6 时候的备份拷进去。</p></li>
+<li><p>开 iTunes，然后从备份恢复手机。</p></li>
+<li><p>好了，折腾完毕，又回到了之前的状态。</p></li>
+</ol>
+
+
+<p>Tips：</p>
+
+<ol>
+<li><p>刷的过程中遭遇任何 3194，16XX 错误的，请检查 hosts 文件，把有关 apple.com 的行数统统干掉，重启，台式机的话换机箱后面的口，笔记本换个确认接触比较好的口。要是还刷不成就别刷了，没缘分，省得刷来刷去刷出错误-1，到时候哭都来不及。</p></li>
+<li><p>如果只是想刷一下 iOS7，把玩一下然后吐槽，“靠，这卡货/丑货”，然后刷回来的，那其实不用刷，因为有很多人帮你吐槽过了，玩微博的这个界面也见得多了，不差你一个。</p></li>
+<li><p>iPhone5 刷了之后流畅度表现尚可，iPhone4S 在程序开多了的情况下会比较卡顿，至于 iPhone4 的表现，个人不抱期望。所有机器都会遭遇比较严重的耗电和发热问题。</p></li>
+<li><p>没图是因为个人感觉已经说得够明白了，对于 iTunes 比较熟悉的人不会在乎有没有图。这个不是手把手的教程，只能算是个让比较熟悉的人少绕弯路的介绍。想看手把手教程的，前面左拐是 Weiphone。</p></li>
+<li><p>对于抱着调试程序目的，也不是很建议刷，我个人的感觉现在 UIKit bug 比较多，等稳定了再调试也来得及，按照以往的尿性 beta3 之后会比较靠谱。况且兼容 iOS7 也不是直接用 iOS7 SDK 编译一下就能解决的，这回 iOS7 的更新还会带来交互、贴图等等更大的问题。</p></li>
+</ol>
+
+
+<p><strong>总的来说就是现在没什么好刷的，除非你热爱穷折腾。</strong></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">szx</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-14T18:19:00+08:00" pubdate data-updated="true">Jun 14<sup>th</sup>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/05/09/how-to-override-hostname-provided-by-netbios-in-os-x/" title="Previous Post: 如何在 OS X 中防止终端用户名被 NetBIOS 名称覆盖">&laquo; 如何在 OS X 中防止终端用户名被 NetBIOS 名称覆盖</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/12/16/autocad-2014-mac-makes-system-laggy/" title="Next Post: 安装Autocad 2014 for Mac 后系统变卡的解决方法">安装Autocad 2014 for Mac 后系统变卡的解决方法 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/19/how-to-make-theme-for-lilybbs-ios-client/">小百合iOS客户端主题制作教程</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/16/autocad-2014-mac-makes-system-laggy/">安装Autocad 2014 for Mac 后系统变卡的解决方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/14/how-to-upgrade-to-ios7-beta/">如何在你的 iPhone 上安装 iOS7</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/09/how-to-override-hostname-provided-by-netbios-in-os-x/">如何在 OS X 中防止终端用户名被 NetBIOS 名称覆盖</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/13/refined-njuthesis-latex-template/">为 OS X + Sublime Text 优化后的 NJUThesis 模板</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/fireblue">@fireblue</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'fireblue',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - szx -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'fireblue';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://zongxuan.us/blog/2013/06/14/how-to-upgrade-to-ios7-beta/';
+        var disqus_url = 'http://zongxuan.us/blog/2013/06/14/how-to-upgrade-to-ios7-beta/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

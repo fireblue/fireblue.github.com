@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>百合iPhone客户端 - @interface SZBlog : NSBlog</title>
+  <meta name="author" content="szx">
+
+  
+  <meta name="description" content="百合iPhone客户端 Jul 31st, 2012 请点击下面的图标到App Store安装最新的稳定版： 请点击下面的图标下载最新的开发版（需要越狱安装App Sync补丁） 资助鼓励 如果你觉得我做的这些对你来说是有价值的，并鼓励我进行免费的开发。那你可以资助我，让我可以支付服务器费用， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zongxuan.us/lily">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="@interface SZBlog : NSBlog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33867112-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@interface SZBlog : NSBlog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zongxuan.us" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">百合iPhone客户端</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-31T02:22:00+08:00" pubdate data-updated="true">Jul 31<sup>st</sup>, 2012</time></p>
+  </header>
+  
+  <h4>请点击下面的图标到App Store安装最新的稳定版：</h4>
+
+<p><a href="http://itunes.apple.com/cn/app/xiao-bai-hebbs/id482585138?mt=8"><img src="appstore.png" ></a></p>
+
+<h4>请点击下面的图标下载最新的开发版（需要越狱安装App Sync补丁）</h4>
+
+<p><a href="itms-services://?action=download-manifest&url=http://cdn.zongxuan.us:8181/rabbithole/manifest.plist"><img src="onekey.png" ></a></p>
+
+<h4>资助鼓励</h4>
+
+<p>如果你觉得我做的这些对你来说是有价值的，并鼓励我进行免费的开发。那你可以资助我，让我可以支付服务器费用，买杯咖啡，或者在情人节给<a href="http://tommlly.com">Smmlly</a>买一束花。 ：）</p>
+
+<p><a href="https://me.alipay.com/suzongxuan"><img src="donate-with-alipay.png" ></a></p>
+
+<br />
+
+
+<h4>FAQ</h4>
+
+<h5>1. 我使用中国移动而且客户端打开全是乱码怎么办？</h5>
+
+<p>请<a href="http://zongxuan.us/lily/cmnet.mobileconfig">猛击这里</a>安装接入点配置文件。</p>
+
+<p>使用移动 cmwap 接入点时，数据经过了代理服务器中转，导致编码出现问题。</p>
+
+<hr />
+
+<h4>changelog:</h4>
+
+<h5>- v2.1.0 (Build 22)</h5>
+
+<ol>
+<li>@ 功能，被 @ 的用户将得到站内信通知。</li>
+<li>界面逐步使用 Quartz 渲染，为主题功能做准备。</li>
+</ol>
+
+
+<h5>- v2.0.0 (Build 21)</h5>
+
+<ol>
+<li>全新的架构</li>
+</ol>
+
+
+<h5>- v1.8.5 (Build 17)</h5>
+
+<ol>
+<li>优化了界面性能，更顺滑</li>
+<li>加入收藏夹功能，可以用来收藏帖子</li>
+</ol>
+
+
+<h5>- v1.8.4 (Build 14)</h5>
+
+<ol>
+<li>加入了简单的自动排版模式。</li>
+</ol>
+
+
+<h5>- v1.8.3 (Build 13)</h5>
+
+<ol>
+<li>加入了各区热点及搜索功能。</li>
+</ol>
+
+
+<h5>- v1.8.2 (Build 12)</h5>
+
+<ol>
+<li>修正了某些情况下阅读帖子时会变灰退出的问题。</li>
+<li>移除了一些不常用到的功能。</li>
+<li>提高了阅读器的性能以提供更顺滑的体验。</li>
+</ol>
+
+
+<h5>- v1.8.1 (Build 11)</h5>
+
+<ol>
+<li>修正了某些情况下在解析页面时可能导致程序退出的bug。</li>
+<li>在阅读器中加入了新的折纸状的“上拉以载入更多”样式。</li>
+<li>首页标签页更改为新的样式。</li>
+</ol>
+
+
+<h5>- v1.8奥运版 (Build 10)</h5>
+
+<ol>
+<li>修正了iOS4用户在发帖或回帖后闪退的问题。</li>
+<li>加入十大推送功能（暂时只支持iOS5以上的用户）。</li>
+<li>很小的界面修改。</li>
+</ol>
+
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-31T02:22:00+08:00" pubdate data-updated="true">Jul 31<sup>st</sup>, 2012</time>
+        
+      </p>
+      
+    </footer>
+  
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/19/how-to-make-theme-for-lilybbs-ios-client/">小百合iOS客户端主题制作教程</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/16/autocad-2014-mac-makes-system-laggy/">安装Autocad 2014 for Mac 后系统变卡的解决方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/14/how-to-upgrade-to-ios7-beta/">如何在你的 iPhone 上安装 iOS7</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/09/how-to-override-hostname-provided-by-netbios-in-os-x/">如何在 OS X 中防止终端用户名被 NetBIOS 名称覆盖</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/13/refined-njuthesis-latex-template/">为 OS X + Sublime Text 优化后的 NJUThesis 模板</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/fireblue">@fireblue</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'fireblue',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - szx -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'fireblue';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://zongxuan.us/lily/index.html';
+        var disqus_url = 'http://zongxuan.us/lily/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
