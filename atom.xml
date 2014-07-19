@@ -4,7 +4,7 @@
   <title><![CDATA[@interface SZBlog : NSBlog]]></title>
   <link href="http://zongxuan.us/atom.xml" rel="self"/>
   <link href="http://zongxuan.us/"/>
-  <updated>2014-07-19T11:35:11+08:00</updated>
+  <updated>2014-07-19T11:37:31+08:00</updated>
   <id>http://zongxuan.us/</id>
   <author>
     <name><![CDATA[szx]]></name>
@@ -22,7 +22,7 @@
 
 <p>之前的 3.0.0 版本也能够识别第三方主题，但有部分选项可能支持不佳。</p>
 
-<p>示例主题包：</p>
+<p>示例主题包可以在 <a href="http://zongxuan.us/attachments/us.zongxuan.Blue.zip">这里</a> 下载</p>
 
 <p>主题制作仿照示例主题包即可，主要内容在于图片文件的准备和包内 info.plist 的配置。</p>
 
