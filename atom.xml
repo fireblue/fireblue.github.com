@@ -4,7 +4,7 @@
   <title><![CDATA[@interface SZBlog : NSBlog]]></title>
   <link href="http://zongxuan.us/atom.xml" rel="self"/>
   <link href="http://zongxuan.us/"/>
-  <updated>2014-08-10T21:17:08+08:00</updated>
+  <updated>2014-11-20T17:53:19+08:00</updated>
   <id>http://zongxuan.us/</id>
   <author>
     <name><![CDATA[szx]]></name>
@@ -597,7 +597,7 @@
 }
 
 - (CGRect)positionOfElementWithId:(NSString *)elementID {
-    NSString *js = @&quot;function f(){ var r = document.getElementById('%@').getBoundingClientRect(); return '{{'+r.left+','+r.top+'},{'+r.width+','+r.height+'}}'; } f();&quot;;
+    NSString *js = @&quot;function f(){ var r = document.getElementById(&#39;%@&#39;).getBoundingClientRect(); return &#39;{{&#39;+r.left+&#39;,&#39;+r.top+&#39;},{&#39;+r.width+&#39;,&#39;+r.height+&#39;}}&#39;; } f();&quot;;
     NSString *result = [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:js, elementID]];
     CGRect rect = CGRectFromString(result);
     return rect;
